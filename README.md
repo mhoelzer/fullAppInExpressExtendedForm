@@ -2,9 +2,9 @@
 
 You'll remember that a server will sometimes need to send HTML as a response body, instead of JSON. We do this to serve client files to the browser. Express has a built-in way of serving static files. 
 
-In this project, you'll see that we follow the convention of keep our client code in a "/public" folder. Then we use the `express.static(insertPathToStaticFilesHere)` to have Express *automatically* serve the files in that folder. Any file you want the browser to have access to, has to live in this "/public" folder – HTML files, CSS files, client JavaScript files, image files, font files, etc.
+In this project, you'll see that we follow the convention of keeping our client code in a "/public" folder. Then we use the `express.static(insertPathToStaticFilesHere)` to have Express *automatically* serve the files in that folder. Any file you want the browser to have access to, has to live in this "/public" folder – HTML files, CSS files, client JavaScript files, image files, font files, etc.
 
-Today, you're going to write server code and client code in the same project.
+Today, you're going to write server code *and* client code in the same project.
 
 ## Client Code
 
