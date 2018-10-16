@@ -1,0 +1,12 @@
+input[name=access] {
+    margin: 5px;
+}
+label[for=administrator] {
+    border: 2px dotted green;
+}
+label[for=moderator] {
+    border: 2px dotted gold;
+}
+label[for=user] {
+    border: 2px dotted red;
+}
