@@ -1,101 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <title>Create User</title>
-</head>
-<body id="changeBodyBackground">
-    <form id="user-create-form" method="post">
-        <fieldset>
-            <legend>User Information</legend>
-            <input type="text" id="fullName" placeholder="Full Name" autofocus><br>
-            <input type="text" id="username" placeholder="Username"><br>
-            <input type="text" id="birthday" placeholder="Birthday"><br>
-            <input type="text" id="email" placeholder="Email"><br>
-            <input type="tel" id="phone" placeholder="Phone Number"><br>
-            <input type="url" id="website" placeholder="Personal Homepage or Social Media Website"><br>
-        </fieldset>
-
-        <fieldset>
-            <legend>Preferred Form of Communication</legend>
-            <div>
-                <input type="radio" id="email" name="communication" value="email">
-                <label for="email">Email</label>
-            </div>
-            <div>
-                <input type="radio" id="pager" name="communication" value="pager" disabled>
-                <label for="pager">Pager</label>
-            </div>
-            <div>
-                <input type="radio" id="phone" name="communication" value="phone">
-                <label for="phone">Phone</label>
-            </div>
-            <div>
-                <input type="radio" id="website" name="communication" value="website">
-                <label for="website">Website</label>
-            </div>
-        </fieldset>
-
-        <fieldset>
-            <legend>What Devices Do You Own?</legend>
-            <div>
-                <input type="checkbox" id="android" name="devices" value="android">
-                <label for="android">Android</label>
-            </div>
-            <div>
-                <input type="checkbox" id="chromebook" name="devices" value="chromebook">
-                <label for="chromebook">Chrome OS or Chromebook</label>
-            </div>
-            <div>
-                <input type="checkbox" id="iOS" name="devices" value="iOS">
-                <label for="iOS">iOS (iPad, iPhone, iPod, etc.)</label>
-            </div>
-            <div>
-                <input type="checkbox" id="linux" name="devices" value="linux">
-                <label for="linux">Linux</label>
-            </div>
-            <div>
-                <input type="checkbox" id="mac" name="devices" value="mac">
-                <label for="mac">Mac</label>
-            </div>
-            <div>
-                <input type="checkbox" id="windows" name="devices" value="windows">
-                <label for="windows">Windows</label>
-            </div>
-        </fieldset>
-
-        <fieldset>
-            <legend>What Is Your Security Clearance?</legend>
-            <select multiple id="multi" name="multi">
-                <option name="access" id="administrator" value="administrator">Administrator</option>
-                <option name="access" id="moderator" value="moderator">Moderator</option>
-                <option name="access" id="user" value="user">User</option>
-            </select>
-        </fieldset>
-
-        <fieldset>
-            <legend>PICK A COLOR, ANY COLOR</legend>
-            <input type="color" id="color" name="color" onchange="changeBackground(this)">
-        </fieldset>
-
-        <fieldset>
-            <legend>Printed Stuff</legend>
-            <div type="hidden" id="idNumber"></div>
-            <div id="put"></div>
-        </fieldset>
-
-        <fieldset>
-            <legend>Buttons</legend>
-            <button type="submit">Submit Information</button>
-            <button type="reset">Reset Information</button>
-        </fieldset>
-
-    </form>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="style.css">
+        <title>Create User</title>
+    </head>
     
+    <body id="changeBodyBackground">
+        <form id="user-create-form" method="post">
+            <fieldset>
+                <legend>User Information</legend>
+                <input type="text" id="fullName" placeholder="Full Name" autofocus><br>
+                <input type="text" id="username" placeholder="Username"><br>
+                <input type="text" id="birthday" placeholder="Birthday"><br>
+                <input type="text" id="email" placeholder="Email"><br>
+                <input type="tel" id="phone" placeholder="Phone Number"><br>
+                <input type="url" id="website" placeholder="Personal Homepage or Social Media Website"><br>
+            </fieldset>
 
-    <script src="index.js"></script>
-</body>
+            <fieldset>
+                <legend>Preferred Form of Communication</legend>
+                <div>
+                    <input type="radio" id="email" name="communication" value="email">
+                    <label for="email">Email</label>
+                </div>
+                <div>
+                    <input type="radio" id="pager" name="communication" value="pager" disabled>
+                    <label for="pager">Pager</label>
+                </div>
+                <div>
+                    <input type="radio" id="phone" name="communication" value="phone">
+                    <label for="phone">Phone</label>
+                </div>
+                <div>
+                    <input type="radio" id="website" name="communication" value="website">
+                    <label for="website">Website</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>What Devices Do You Own?</legend>
+                <div>
+                    <input type="checkbox" id="android" name="devices" value="android">
+                    <label for="android">Android</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="chromebook" name="devices" value="chromebook">
+                    <label for="chromebook">Chrome OS or Chromebook</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="iOS" name="devices" value="iOS">
+                    <label for="iOS">iOS (iPad, iPhone, iPod, etc.)</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="linux" name="devices" value="linux">
+                    <label for="linux">Linux</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="mac" name="devices" value="mac">
+                    <label for="mac">Mac</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="windows" name="devices" value="windows">
+                    <label for="windows">Windows</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>What Is Your Security Clearance?</legend>
+                <select multiple id="multi" name="multi" onchange="checkBoxChecker()">
+                    <option name="access" id="administrator" value="administrator">Administrator</option>
+                    <option name="access" id="moderator" value="moderator">Moderator</option>
+                    <option name="access" id="user" value="user">User</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>PICK A COLOR, ANY COLOR</legend>
+                <input type="color" id="color" name="color" onchange="changeBackground(this)">
+            </fieldset>
+
+            <fieldset>
+                <legend>Printed Stuff</legend>
+                <div type="hidden" id="idNumber"></div>
+                <div id="put"></div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Buttons</legend>
+                <button type="submit">Submit Information</button>
+                <button type="reset">Reset Information</button>
+            </fieldset>
+            <select id="car" onchange="ChangeCarList()"> 
+                    <option value="">-- Car --</option> 
+                    <option value="VO">Volvo</option> 
+                    <option value="VW">Volkswagen</option> 
+                    <option value="BMW">BMW</option> 
+                  </select> 
+                  
+        </form>
+        
+        <script src="index.js"></script>
+    </body>
 </html>

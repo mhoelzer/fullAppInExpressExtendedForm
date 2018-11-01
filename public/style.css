@@ -1,3 +1,7 @@
+html {
+    font-family: fantasy, Georgia, 'Times New Roman', Times, serif;
+}
+
 input[name=access] {
     margin: 5px;
 }
